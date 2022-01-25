@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/Pom-o/Pom-o.github.io.git</id>
+    <title>Pom &apos;s blog</title>
+    <updated>2022-01-25T06:22:01.622Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/Pom-o/Pom-o.github.io.git"/>
+    <link rel="self" href="https://github.com/Pom-o/Pom-o.github.io.git/atom.xml"/>
+    <subtitle>最近的兴趣是法国哲学，单机游戏，独立动画，当代摄影 &lt;br&gt; &lt;br&gt;
+作品集网站 &lt;br&gt;
+https://pomeye.myportfolio.com/</subtitle>
+    <logo>https://github.com/Pom-o/Pom-o.github.io.git/images/avatar.png</logo>
+    <icon>https://github.com/Pom-o/Pom-o.github.io.git/favicon.ico</icon>
+    <rights>All rights reserved 2022, Pom &apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Hi ]]></title>
+        <id>https://github.com/Pom-o/Pom-o.github.io.git/post/hi/</id>
+        <link href="https://github.com/Pom-o/Pom-o.github.io.git/post/hi/">
+        </link>
+        <updated>2022-01-25T05:42:52.000Z</updated>
+        <content type="html"><![CDATA[<p>遇到你。</p>
+]]></content>
+    </entry>
+</feed>
