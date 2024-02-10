@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blurred | PoM&#39;s</title>
+<link rel="shortcut icon" href="https://pomeye.art/favicon.ico?v=1707523962829">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://pomeye.art/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Blurred | PoM&#39;s - Atom Feed" href="https://pomeye.art/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+长时间看屏幕后，我的视界↑
+做过近视眼手术后最初的几天，世界一片模糊。不是散光重影的模糊——好像我一下子住进了一个帐子，怎么都走不出来。
+配合专门喂给眼睛的药水，过了一两周眼睛有所好转，或许会是让以前戴眼镜的自己羡慕的水平——但是自己是不..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://pomeye.art">
+  <img class="avatar" src="https://pomeye.art/images/avatar.png?v=1707523962829" alt="">
+  </a>
+  <h1 class="site-title">
+    PoM&#39;s
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://simple-experience-3f7.notion.site/3a8fac74580949f68adef471a2353bf6?pvs=4" class="menu" target="_blank">
+          林间动画
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://pomeye.myportfolio.com/" class="menu" target="_blank">
+          做了什么
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Blurred
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-12-01
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <figure data-type="image" tabindex="1"><img src="https://pomeye.art/post-images/1669882215875.jpg" alt="" loading="lazy"></figure>
+<p>长时间看屏幕后，我的视界↑</p>
+<p>做过近视眼手术后最初的几天，世界一片模糊。不是散光重影的模糊——好像我一下子住进了一个帐子，怎么都走不出来。<br>
+配合专门喂给眼睛的药水，过了一两周眼睛有所好转，或许会是让以前戴眼镜的自己羡慕的水平——但是自己是不会羡慕自己的。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://pomeye.art/post/ru-guo-shi-na-yang-de-hua-hui-zen-me-yang/">
+              <h3 class="post-title">
+                如果是“那样”的话，会怎么样？
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <a href="https://pomeye.art/">PoM's</a>
+  <a class="rss" href="https://pomeye.art/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

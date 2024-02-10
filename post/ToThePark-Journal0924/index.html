@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> 通过做游戏思考理所当然的动作 | PoM&#39;s</title>
+<link rel="shortcut icon" href="https://pomeye.art/favicon.ico?v=1707523962829">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://pomeye.art/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title=" 通过做游戏思考理所当然的动作 | PoM&#39;s - Atom Feed" href="https://pomeye.art/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="《去公园》Journal 0924
+在做交互系统的设计的时候，已经有很多顶层的，被玩家感知到的概念可以参考了。
+比如说“平台跳跃”、2D游戏、3D的探索、被称为Field Action的跑酷动作等等。
+它们是玩家如何感知游戏世界的方式。
+切..." />
+    <meta name="keywords" content="GameDevJournal" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://pomeye.art">
+  <img class="avatar" src="https://pomeye.art/images/avatar.png?v=1707523962829" alt="">
+  </a>
+  <h1 class="site-title">
+    PoM&#39;s
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://simple-experience-3f7.notion.site/3a8fac74580949f68adef471a2353bf6?pvs=4" class="menu" target="_blank">
+          林间动画
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://pomeye.myportfolio.com/" class="menu" target="_blank">
+          做了什么
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+               通过做游戏思考理所当然的动作
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-09-24
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://pomeye.art/tag/1HrmPAapX/" class="post-tag">
+                  # GameDevJournal
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="去公园journal-0924">《去公园》Journal 0924</h2>
+<p>在做交互系统的设计的时候，已经有很多顶层的，被玩家感知到的概念可以参考了。</p>
+<p>比如说“平台跳跃”、2D游戏、3D的探索、被称为Field Action的跑酷动作等等。</p>
+<p>它们是玩家如何感知游戏世界的方式。</p>
+<p>切换视角，从游戏制作者的视角来看——</p>
+<p>3d引擎所搭建的游戏世界是一个抽象的空间。在最初只有坐标系xyz。放置一个“物体”其实也很顶层了。它是平面的还是3D的？可见的还是不可见的？是否有“碰撞体”？通过什么方式被渲染出来？</p>
+<p>如果一个一个考虑个中的结构和数据，只会陷入无尽的computer science, 计算机图形学等等的学习中去。</p>
+<p>所以做游戏要考虑的是，想要传达什么样的体验。然后展开问题，思考如何实施。</p>
+<p>因为游戏玩家已经熟知各种游戏世界的交互方式，ta们知道那些非言语的，游戏制作者想要传达的体验和行动模式。</p>
+<p>但是在游戏被制造出来之前，创造者是经验的人。ta们将自己的经验抽象为游戏系统——这个世界是从能做A到能做Ac，…一直到“Action”。它是通过一个一个神经元一般的模块成长起来的。神经元之间有输入、输出，若做的好了，它们之间互相交流，合声为人的经验能体会的行为模式、人与之互动。</p>
+<p>游戏世界是抽象的世界，在抽象的维度之间，游戏行为生长出了自己的语言。它<strong>不是</strong>游戏之外的世界、正如语言。它<strong>不是</strong>但是这并不代表它不在其中——，因为人是造物者，物又作用于人。</p>
+<p>语言和人深深勾连。</p>
+<p>回到前面的问题，想要传达什么样的体验？如何界定这种体验的<strong>位置</strong>？</p>
+<p>我曾上过一门课，名为Contextual studies。在课程的最初，有一张图。</p>
+<img src="https://i.mji.rip/2023/09/24/e325c317c81879390e7ec2f25246b872.png" alt="e325c317c81879390e7ec2f25246b872.png" width="400" height="400">
+<p>黑色为“地”（ground），白色为“表&quot;。</p>
+<p>白色被黑色定义了。</p>
+<p>如果承认“电子游戏”为地，一款游戏或许是其中的一个白点。但是黑色也被白色定义了。白色也是黑色的地。</p>
+<p>我不希望自己的游戏的“地”是videogame。我希望白点黑块的“地”是这个页面、它也是你所在的空间里、你在看的荧光屏上的一张草率的图像。我希望它能作为好的作品、作为人能感受到的全部语言空间里的一件丰满的小诗。</p>
+<p>所以当游戏在不同的地和表之间切换的时候，它总是被定义为不同的东西。</p>
+<p>这个白点总是需要被定义，被画出来才能被言说。</p>
+<p>我需要一个手机中备忘录的绘图功能去画它；我也要借用游戏引擎可以实现的功能去做游戏——这又回到了那片黑色里。</p>
+<p>其实我画一个白点，是为了想说明contextual studies上我看到的那张ppt里的东西；我想要在游戏里通过玩家控制角色的移动速度、交互模式去象征“行走方式”对于一个人的意义的时候，世界上还有无数的游戏角色在通过类似的方式被感知。它们在别的context里，是<strong>理所当然的</strong>。虽然制造者做了它们，但是它们仅仅是用来传达别的游戏语言的声带。</p>
+<p>并所以这个游戏中，为了传达“动作的意义”的groud要足够鲜明，才能让<strong>理所当然</strong>被感受到。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%8E%BB%E5%85%AC%E5%9B%ADjournal-0924">《去公园》Journal 0924</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://pomeye.art/post/shi/">
+              <h3 class="post-title">
+                石
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <a href="https://pomeye.art/">PoM's</a>
+  <a class="rss" href="https://pomeye.art/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
